@@ -28,7 +28,6 @@
 }
 
 .main{
-    /* background-color: aqua; */
     width: 85vw;
 }
 
@@ -37,13 +36,11 @@
 }
 
 .infoContainer{
-    /* background-color: aquamarine; */
     height: 59vh;
     width: 80vw;
     margin: 106px auto;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .hello{
