@@ -20,10 +20,10 @@
       body {
         background-color: rgb(2, 2, 59);
         color: whitesmoke;
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
       }
 
-      nav{
+      nav {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -31,35 +31,86 @@
         background-color: rgb(38, 38, 103);
       }
 
-      nav ul{
+      nav ul {
         display: flex;
         justify-content: center;
       }
 
-      nav ul li{
+      nav ul li {
         list-style: none;
         margin: 0 23px;
       }
 
-      .left{
+      nav ul li a{
+        text-decoration: none;
+        color: whitesmoke;
+      }
+
+      nav ul li a:hover{
+        color: rgb(173, 90, 251);
+        /* font-size: 1.01rem; */
+      }
+
+      .left {
         font-size: 1.5rem;
+      }
+
+      .firstSection{
+        display: flex;
+        justify-content: space-around;
+        /* margin: 70px 0; */
+        /* background-color: red; */
+      }
+
+      .firstSection> div{
+        width: 30%;
+      }
+
+      .leftSection{
+        font-size: 3rem;
+        margin: 145px 0;
+      }
+
+      .rightSection{
+        margin: 20px 0;
+        margin-right: 30px;
+      }
+
+      .rightSection img{
+        width: 133%;
+      }
+
+      .purple{
+        color: rgb(173, 90, 251);
       }
     </style>
   </head>
   <body>
     <header>
       <nav>
-        <div class="left">Bhanavi's Website</div>
+        <div class="left">Bhanavi's Portfolio</div>
         <div class="right">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Portfolio</li>
-                <li>Contact Me</li>
-            </ul>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Portfolio</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
         </div>
       </nav>
     </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, I am <span class="purple">Bhanavi</span> 
+                <div>And I am a passionate</div>
+                <div>Web Developer</div>
+            </div>
+            <div class="rightSection">
+                <img src="/img/developer.png" alt="">
+            </div>
+        </section>
+    </main>
   </body>
 </html>
